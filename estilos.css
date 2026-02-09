@@ -1,0 +1,89 @@
+body {
+
+
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff4d6d, #ff9aa2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Pacifico', cursive;
+    overflow: hidden;
+}
+
+.contenedor {
+    background: white;
+    padding: 30px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    position: relative;
+    z-index: 2;
+}
+
+h1 {
+    color: #ff4d6d;
+}
+
+.imagen {
+    width: 200px;
+    margin: 20px 0;
+    transition: transform 0.5s;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+#btnSi {
+    background: #ff4d6d;
+    color: white;
+    transition: transform 0.3s;
+}
+
+#btnNo {
+    background: #999;
+    color: white;
+}
+
+#mensaje {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #ff4d6d;
+}
+
+/* 🌸 Flores */
+.flores {
+    width: 120px;
+    margin-top: 15px;
+    animation: flotar 3s infinite;
+}
+
+@keyframes flotar {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+/* 💖 Corazones lluvia */
+.corazones span {
+    position: absolute;
+    color: pink;
+    animation: caer 5s linear infinite;
+    font-size: 20px;
+}
+
+@keyframes caer {
+    0% { transform: translateY(-100px); }
+    100% { transform: translateY(100vh); }
+}
